@@ -1,0 +1,125 @@
+html {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+    @media (max-width: 800px) {
+        font-size: 14px;
+    }
+}
+
+body{
+    background: #f6f6f6;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    min-width: 100%;   
+}
+
+//header
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100%;
+}
+
+header {
+    max-width: 100%;
+    height: 100px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: white;
+    @media (max-width: 650px) {
+        height: auto;
+    }
+    .logo {
+        img {
+            max-width: 60px;
+            margin: 0;
+            height: auto;
+               @media (max-width: 650px) {
+                max-width: 30px;
+            }
+        }
+    }
+}
+
+.nav-bar {
+    li {
+        list-style-type: none;
+        display: inline;
+        margin-left: 1em;
+        a {
+            text-decoration: none;
+            color: rgb(128, 107, 250);
+            font-size: 1.5rem;
+            transition: all 1s ease-out;
+            cursor: prointer;
+            &:hover {
+                color: rgb(0, 0, 94);
+            }
+        }
+    }
+}
+
+.space-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    max-width: 100%;
+    min-height: 350px;
+    p {
+        color:rgb(168, 168, 168)
+    }
+}
+
+//main
+
+//footer
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 12px;
+    max-width: 100%;
+    height: 284px;
+    padding-right: 5%;
+    padding-left: 5%;
+    span{
+        padding-bottom: 20px;
+    }
+    .foot-list {
+        display: flex;
+    }
+    ul{
+        padding-left: 10%;
+        margin-top: 0;
+        li {
+            list-style-type: none;
+            margin-bottom: 5px;
+        }
+        &:nth-child(1){
+            padding-left: 0;
+        }
+    }
+    
+    @media screen and( max-width: 1030px) {
+        font-size: 14px;
+        height: 184px;
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        align-items: flex-start;
+        padding-left: 10%;
+        
+    }
+}
