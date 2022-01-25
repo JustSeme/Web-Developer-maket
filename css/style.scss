@@ -17,8 +17,9 @@ body{
 }
 
 $grayColor: rgb(168, 168, 168);
+
+//For index.html
 //header
-// Пофиксить в nav размер шрифта
 .row {
     display: flex;
     flex-direction: row;
@@ -67,6 +68,12 @@ header {
     }
 }
 
+.active {
+    :nth-child(1){
+        color: #0d1872;
+    }
+}
+
 .space-block {
     display: flex;
     flex-direction: column;
@@ -83,8 +90,9 @@ header {
 
 //main
 main {
+    padding-left: 5%;
+    padding-right: 5%;
     align-items: center;
-    text-align: center;
     font-size: 1rem;
     max-width: 100%;
     min-height: 500px;
@@ -94,12 +102,15 @@ main {
     .works-list {
         display: flex;
         flex-wrap: wrap;
+        figure {
+            display: inline-block;
+            flex: 1 1 auto;
+        }
         img {
             border: 2px solid black;
             border-radius: 15px;
             min-height: 170px;
         }
-        margin-left: 5px;
         a {
             text-decoration: none;
             color: $grayColor;
@@ -121,9 +132,9 @@ footer {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    font-size: 12px;
+    font-size: 20px;
     max-width: 100%;
-    height: 240px;
+    min-height: 220px;
     padding-right: 5%;
     padding-left: 5%;
     span{
@@ -153,3 +164,30 @@ footer {
         padding-left: 10%;
     }
 }
+
+//For contacts.html
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    ul{
+        padding: 0;
+        li{
+            list-style-type: none;
+            margin-bottom: 12px;
+                span{
+                    color: rgb(139, 139, 139);
+                }
+                .contact-name{
+                    font-weight: bold;
+                    color: black;
+                }  
+        }
+    }
+    @media screen and( max-width: 1300px) {
+       max-width: 100%;
+    }
+} // Дописать стили для формы
