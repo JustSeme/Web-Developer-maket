@@ -16,7 +16,9 @@ body{
     min-width: 100%;   
 }
 
+$grayColor: rgb(168, 168, 168);
 //header
+// Пофиксить в nav размер шрифта
 .row {
     display: flex;
     flex-direction: row;
@@ -36,6 +38,7 @@ header {
     }
     .logo {
         img {
+            border-radius: 5px;
             max-width: 60px;
             margin: 0;
             height: auto;
@@ -54,7 +57,7 @@ header {
         a {
             text-decoration: none;
             color: rgb(128, 107, 250);
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             transition: all 1s ease-out;
             cursor: prointer;
             &:hover {
@@ -66,19 +69,48 @@ header {
 
 .space-block {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 1rem;
     max-width: 100%;
-    min-height: 350px;
+    min-height: 250px;
     p {
-        color:rgb(168, 168, 168)
+        color: $grayColor;
     }
 }
 
 //main
+main {
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    max-width: 100%;
+    min-height: 500px;
+    p {
+        color: $grayColor;
+    }
+    img {
+        border: 2px solid black;
+        border-radius: 15px;
+        min-height: 170px;
+    }
+    .works-list {
+        display: flex;
+        margin-left: 5px;
+        padding: 5px;
+        a {
+            text-decoration: none;
+            color: $grayColor;
+            font-size: 0.8rem;
+            &:active {
+                text-decoration: none;
+                color: $grayColor;
+            }
+        }
+    }
+}
 
 //footer
 footer {
@@ -91,7 +123,7 @@ footer {
     flex-wrap: wrap;
     font-size: 12px;
     max-width: 100%;
-    height: 284px;
+    height: 240px;
     padding-right: 5%;
     padding-left: 5%;
     span{
@@ -112,7 +144,7 @@ footer {
         }
     }
     
-    @media screen and( max-width: 1030px) {
+    @media screen and(max-width: 1030px) {
         font-size: 14px;
         height: 184px;
         flex-direction: column;

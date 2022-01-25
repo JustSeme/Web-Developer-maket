@@ -51,6 +51,7 @@ header {
 }
 
 header .logo img {
+  border-radius: 5px;
   max-width: 60px;
   margin: 0;
   height: auto;
@@ -71,7 +72,7 @@ header .logo img {
 .nav-bar li a {
   text-decoration: none;
   color: #806bfa;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
   cursor: prointer;
@@ -85,23 +86,62 @@ header .logo img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
   font-size: 1rem;
   max-width: 100%;
-  min-height: 350px;
+  min-height: 250px;
 }
 
 .space-block p {
+  color: #a8a8a8;
+}
+
+main {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  max-width: 100%;
+  min-height: 500px;
+}
+
+main p {
+  color: #a8a8a8;
+}
+
+main img {
+  border: 2px solid black;
+  border-radius: 15px;
+  min-height: 170px;
+}
+
+main .works-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 5px;
+  padding: 5px;
+}
+
+main .works-list a {
+  text-decoration: none;
+  color: #a8a8a8;
+  font-size: 0.8rem;
+}
+
+main .works-list a:active {
+  text-decoration: none;
   color: #a8a8a8;
 }
 
@@ -125,7 +165,7 @@ footer {
       flex-wrap: wrap;
   font-size: 12px;
   max-width: 100%;
-  height: 284px;
+  height: 240px;
   padding-right: 5%;
   padding-left: 5%;
 }
