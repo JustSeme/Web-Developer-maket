@@ -91,15 +91,15 @@ main {
     p {
         color: $grayColor;
     }
-    img {
-        border: 2px solid black;
-        border-radius: 15px;
-        min-height: 170px;
-    }
     .works-list {
         display: flex;
+        flex-wrap: wrap;
+        img {
+            border: 2px solid black;
+            border-radius: 15px;
+            min-height: 170px;
+        }
         margin-left: 5px;
-        padding: 5px;
         a {
             text-decoration: none;
             color: $grayColor;
@@ -143,8 +143,7 @@ footer {
             padding-left: 0;
         }
     }
-    
-    @media screen and(max-width: 1030px) {
+    @media screen and( max-width: 1030px) {
         font-size: 14px;
         height: 184px;
         flex-direction: column;
@@ -152,6 +151,5 @@ footer {
         padding-bottom: 40px;
         align-items: flex-start;
         padding-left: 10%;
-        
     }
 }

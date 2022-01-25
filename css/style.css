@@ -120,18 +120,19 @@ main p {
   color: #a8a8a8;
 }
 
-main img {
-  border: 2px solid black;
-  border-radius: 15px;
-  min-height: 170px;
-}
-
 main .works-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-left: 5px;
-  padding: 5px;
+}
+
+main .works-list img {
+  border: 2px solid black;
+  border-radius: 15px;
+  min-height: 170px;
 }
 
 main .works-list a {
