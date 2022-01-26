@@ -104,7 +104,7 @@ main {
         flex-wrap: wrap;
         figure {
             display: inline-block;
-            flex: 1 1 auto;
+            flex: 1 auto auto;
         }
         img {
             border: 2px solid black;
@@ -190,4 +190,67 @@ footer {
     @media screen and( max-width: 1300px) {
        max-width: 100%;
     }
-} // Дописать стили для формы
+}
+
+form {
+    height: 400px;
+    width: 100%;
+    div {
+        display: flex;
+        input {
+            background: white;
+            height: 50px;
+            border: none;
+            padding-left: 20px;
+            margin-bottom: 20px;
+            font-size: .9rem;
+        }
+        textarea {
+            width: 100%;
+            border: none;
+            padding-left: 20px;
+            padding-top: 20px;
+            resize: none;
+            font-size: .9rem;
+        }
+        :nth-child(1){
+            width: 50%;
+        }
+        :nth-child(2){
+            width: 100%;
+        }
+    }
+    button {
+        background: rgb(40, 54, 255);
+        height: 50px;
+        color: white;
+        border: none;
+        max-width: 200px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        cursor: pointer;
+        transition: all 1s ease-out;
+        &:hover {
+            box-shadow: 0 0 8px rgb(40, 54, 255);
+        }
+    }
+    @media screen and( max-width: 1300px) {
+        width: 100%;
+    }
+    @media screen and( max-width: 1300px) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+.map {
+    height: 450px;
+    max-width: 100%;
+    padding: 25px;
+    @media screen and( max-width: 1300px) {
+        height: 300px;
+        margin-bottom: 60px;
+    } 
+}
