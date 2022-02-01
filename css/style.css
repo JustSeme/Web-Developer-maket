@@ -121,6 +121,10 @@ main {
   min-height: 500px;
 }
 
+main h3 {
+  text-align: center;
+}
+
 main p {
   color: #a8a8a8;
 }
