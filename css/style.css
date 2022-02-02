@@ -2,6 +2,7 @@ html {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 20px;
   line-height: 1.4;
+  overflow-x: hidden;
 }
 
 @media (max-width: 800px) {
@@ -13,7 +14,6 @@ html {
 body {
   background: #f6f6f6;
   overflow-y: auto;
-  overflow-x: hidden;
   padding: 0;
   margin: 0;
   min-width: 100%;
@@ -178,7 +178,7 @@ footer {
       flex-wrap: wrap;
   font-size: 20px;
   max-width: 100%;
-  min-height: 220px;
+  min-height: 100%;
   padding-right: 5%;
   padding-left: 5%;
 }
@@ -331,8 +331,9 @@ form button:hover {
 }
 
 .map {
+  margin: 0 auto;
   height: 450px;
-  max-width: 100%;
+  width: 100%;
   padding: 25px;
 }
 
