@@ -2,7 +2,6 @@ html {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 20px;
     line-height: 1.4;
-    overflow-x: hidden;
     @media (max-width: 800px) {
         font-size: 14px;
     }
@@ -11,6 +10,7 @@ html {
 body{
     background: #f6f6f6;
     overflow-y: auto;
+    overflow-x: hidden;
     padding: 0;
     margin: 0;
     min-width: 100%;   
