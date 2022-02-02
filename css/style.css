@@ -110,6 +110,18 @@ header .logo img {
   color: #a8a8a8;
 }
 
+@media screen and (max-width: 420px) {
+  .space-block {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .space-block {
+    min-height: 150px;
+  }
+}
+
 main {
   padding-left: 5%;
   padding-right: 5%;

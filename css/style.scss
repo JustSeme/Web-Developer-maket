@@ -86,6 +86,12 @@ header {
     p {
         color: $grayColor;
     }
+    @media screen and (max-width: 420px){
+        font-size:  0.7rem;
+    }
+    @media (max-width: 800px) {
+        min-height: 150px
+    }
 }
 
 //main
